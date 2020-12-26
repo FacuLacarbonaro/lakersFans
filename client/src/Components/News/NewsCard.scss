@@ -1,0 +1,22 @@
+@import "../../Assets/Fonts/Fonts.scss";
+
+.newsCard {
+  height: 20rem;
+  width: 5rem;
+  color: white;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: transparent;
+
+  .description {
+    width: 80%;
+    margin-bottom: 4rem;
+    text-shadow: 0 0 10px #000;
+    font-size: 1.3rem;
+    font-family: $roboto;
+  }
+}

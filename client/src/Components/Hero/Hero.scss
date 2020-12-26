@@ -1,0 +1,29 @@
+@import '../../Assets/Colors/Colors.scss';
+@import '../../Assets/Fonts/Fonts.scss';
+
+.hero {
+  height: 36rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  z-index: -1;
+
+  &__description {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    h3 {
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      text-justify: center;
+      margin-bottom: 2rem;
+      font-family: $alfa;
+      font-weight: 200;
+      text-shadow: 0 0 10px #000;
+    }
+  }
+}

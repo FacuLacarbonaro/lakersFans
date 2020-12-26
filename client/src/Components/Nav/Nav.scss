@@ -1,0 +1,21 @@
+@import "../../Assets/Colors/Colors.scss";
+
+.nav {
+  height: 4rem;
+  width: 100%;
+  background-color: $gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 2px solid $purple;
+  .logo {
+    background-image: url("../../Assets/Images/png/los-angeles-lakers-logo/los-angeles-lakers-logo-font.png");
+    margin-left: 1rem;
+    background-size: cover;
+    width: 6rem;
+    height: 3rem;
+  }
+}

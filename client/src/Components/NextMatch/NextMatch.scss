@@ -1,0 +1,54 @@
+@import "../../Assets/Colors/Colors.scss";
+@import "../../Assets/Fonts/Fonts.scss"; 
+
+
+.nextMatch {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $gold;
+
+  h2 {
+    margin-bottom: 2rem;
+    color: white;
+    font-family: $alfa;
+    font-weight: 100;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #000;
+  }
+
+  &__card {
+    width: 90%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $purple;
+    border: 8px solid white;
+
+    h3 {
+      color: white;
+      font-family: $alfa;
+      font-weight: 100;
+      font-size: 1.5rem;
+    }
+
+    .middle {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .matchDay {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      margin-bottom: -1rem;
+    }
+  }
+}
