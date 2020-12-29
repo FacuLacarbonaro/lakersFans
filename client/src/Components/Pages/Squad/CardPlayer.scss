@@ -1,0 +1,101 @@
+@import "../../../Assets/Colors/Colors.scss";
+@import "../../../Assets/Fonts/Fonts.scss";
+
+.squad {
+  .cardPlayer {
+    width: 300px;
+    justify-self: center;
+  }
+  &__grid {
+    padding: 3rem 2rem 3rem 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    font-family: $roboto;
+
+    &__title {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      margin-bottom: 3rem;
+      align-items: center;
+      justify-content: flex-start;
+      color: $gold;
+
+      &__number {
+        width: 3rem;
+        height: 100%;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+      }
+      &__name {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        p {
+          color: white;
+          font-size: 1.5rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__img {
+      height: 22rem;
+      width: 100%;
+      background-position: center;
+      justify-self: center;
+      align-self: center;
+      cursor: pointer;
+
+      &:hover {
+        .squad__grid__img__overlay {
+          opacity: 1;
+        }
+      }
+
+      &__overlay {
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+        opacity: 0;
+        background: rgba(95, 95, 95, 0.726);
+        color: #fef5df;
+        transition: all 0.5s ease-in-out;
+
+        &__desc {
+          width: 100%;
+          padding-top: 9rem;
+          display: flex;
+          flex-direction: column;
+
+          &__row {
+            display: flex;
+            width: 100%;
+            height: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            h4 {
+              margin-left: 1.5rem;
+              margin-right: 1.5rem;
+
+              height: 10px;
+              font-size: 0.8rem;
+            }
+          }
+          hr {
+            width: 99%;
+          }
+        }
+      }
+    }
+  }
+}

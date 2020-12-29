@@ -8,8 +8,11 @@
 
   @keyframes bounce {
     0%,
+    10%,
     50%,
+    70%,
     80%,
+    90%,
     100% {
       transform: translateY(0);
     }

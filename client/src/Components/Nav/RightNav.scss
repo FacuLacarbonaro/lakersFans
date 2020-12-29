@@ -1,4 +1,4 @@
-@import '../../Assets/Colors/Colors.scss';
+@import "../../Assets/Colors/Colors.scss";
 
 .Ul {
   list-style: none;
@@ -35,4 +35,10 @@
       color: $purple;
     }
   }
+}
+
+.control-arrow control-next {
+  z-index: 1;
+  background-color: red;
+  color: red;
 }

@@ -9,25 +9,30 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open, setOpen }) => {
+  const autoClose = () => {
+    setTimeout(() => {
+      setOpen(false);
+    }, 50);
+  };
   return (
     <Ul className="Ul" open={open}>
-      <Link to="/" className="link">
+      <Link onClick={autoClose} to="/" className="link">
         <li>Home</li>
       </Link>
-      <Link to="/about" className="link">
+      <Link onClick={autoClose} to="/about" className="link">
         <li>About us</li>
       </Link>
-      <Link to="/squad" className="link">
+      <Link onClick={autoClose} to="/squad" className="link">
         <li>Squad</li>
       </Link>
-      <Link to="/news" className="link">
+      <Link onClick={autoClose} to="/news" className="link">
         <li>News</li>
       </Link>
-      <Link to="/shop" className="link">
+      <Link onClick={autoClose} to="/shop" className="link">
         <li>Shop</li>
       </Link>
-      <Link to="/contact" className="link">
+      <Link onClick={autoClose} to="/contact" className="link">
         <li>Contact</li>
       </Link>
     </Ul>

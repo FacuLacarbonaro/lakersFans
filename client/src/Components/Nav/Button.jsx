@@ -15,7 +15,7 @@ const Button = () => {
         open={open}
         onClick={() => setOpen(!open)}
       />
-      <RightNav open={open} />
+      <RightNav open={open} setOpen={setOpen} />
     </>
   );
 };
