@@ -12,6 +12,7 @@ app.use(cors());
 
 //Routes
 app.use(require("./routes/Players.Routes"));
+app.use(require("./routes/Products.Routes"));
 
 app.listen(app.get("port"), () => {
   console.log(`Server run on port ${app.get("port")}`);

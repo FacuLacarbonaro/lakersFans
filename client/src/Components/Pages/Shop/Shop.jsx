@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+
 import shopbanner from "../../../Assets/Images/jpg/banne.jpg";
 import tapiz from "../../../Assets/Images/jpg/tapiz-la.jpg";
 import "./Shop.scss";
 import ShopItem from "./ShopItem";
 import Footer from "../../Footer/Footer";
 
-import img from "../../../Assets/Images/jpg/shop1.jpg";
+const Shop = ({ fetchProducts, products }) => {
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
-const Shop = () => {
+  console.log(products);
+
   return (
     <div className="shop">
       <div className="shop__hero">
@@ -34,15 +40,20 @@ const Shop = () => {
       >
         <div className="shop__container__title">
           <h3>Products</h3>
+          <p>
+            Go to basket <span>🗑️</span>{" "}
+          </p>
         </div>
         <div className="shop__container__list">
-          <ShopItem
-            img={img}
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          sint sunt dicta"
-            title="Title"
-            subtitle="Subtitle"
-          />
+          {products.map((item, i) => (
+            <ShopItem
+              key={i}
+              img={item.img}
+              description={item.price}
+              title={item.name}
+              subtitle={item.category}
+            />
+          ))}
         </div>
       </div>
 
@@ -51,4 +62,16 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+const mapStateToProps = (state) => {
+  return {
+    products: state.productReducer.products,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchProducts: () => dispatch({ type: "FETCH_PRODUCTS" }),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Shop);

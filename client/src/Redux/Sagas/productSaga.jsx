@@ -3,9 +3,7 @@ import { put, takeEvery } from "redux-saga/effects";
 
 function* productSaga() {
   try {
-    const res = yield Axios.get(
-      "URL"
-    );
+    const res = yield Axios.get("http://localhost:1337/products");
     let data = res.data;
     yield put({
       type: "FETCH_PRODUCTS_SUCCESS",

@@ -5,14 +5,13 @@ import "./ShopItem.scss";
 const ShopItem = ({ img, description, title, subtitle }) => {
   return (
     <div className="shopItem">
-      <div
-        className="shopItem__img"
-        style={{ backgroundImage: `url(${img})` }}
-      />
+      <div className="shopItem__img">
+        <img src={img} alt="" />
+      </div>
       <div className="shopItem__description">
         <h3>{title}</h3>
         <h4>{subtitle}</h4>
-        <p>{description}</p>
+        <p>${description}</p>
       </div>
 
       <div className="shopItem__overlay">
