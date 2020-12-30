@@ -8,11 +8,11 @@ import shop3 from "../../Assets/Images/jpg/shop3.jpg";
 import shop4 from "../../Assets/Images/jpg/shop4.jpg";
 import shop5 from "../../Assets/Images/jpg/shop5.jpg";
 
-import "./Shop.scss";
+import "./ShopContainer.scss";
 
-const Shop = () => {
+const ShopContainer = () => {
   return (
-    <div className="shop">
+    <div className="shopContainer">
       <h3>
         NEW IN
         <br /> THE LATEST ARRIVALS
@@ -51,4 +51,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default ShopContainer;

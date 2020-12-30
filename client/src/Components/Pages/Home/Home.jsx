@@ -3,7 +3,7 @@ import Footer from "../../Footer/Footer";
 import Hero from "../../Hero/Hero";
 import News from "../../News/News";
 import NextMatch from "../../NextMatch/NextMatch";
-import Shop from "../../Shop/Shop";
+import ShopContainer from "../../ShopContainer/ShopContainer";
 
 const Home = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const Home = () => {
       <Hero />
       <NextMatch />
       <News />
-      <Shop />
+      <ShopContainer />
       <Footer />
     </div>
   );
