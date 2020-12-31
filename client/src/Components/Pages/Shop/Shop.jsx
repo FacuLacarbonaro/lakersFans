@@ -4,15 +4,15 @@ import { connect } from "react-redux";
 import shopbanner from "../../../Assets/Images/jpg/banne.jpg";
 import tapiz from "../../../Assets/Images/jpg/tapiz-la.jpg";
 import "./Shop.scss";
-import ShopItem from "./ShopItem";
+import ShopItem from "../../ShopItem/ShopItem";
 import Footer from "../../Footer/Footer";
+import { Link } from "react-router-dom";
 
-const Shop = ({ fetchProducts, products }) => {
+const Shop = ({ fetchProducts, products, checkout }) => {
+
   useEffect(() => {
     fetchProducts();
   }, []);
-
-  console.log(products);
 
   return (
     <div className="shop">
@@ -40,18 +40,21 @@ const Shop = ({ fetchProducts, products }) => {
       >
         <div className="shop__container__title">
           <h3>Products</h3>
-          <p>
-            Go to basket <span>🗑️</span>{" "}
-          </p>
+          <Link to="/checkout">
+            <p>
+              Go to Checkout <span>🗑️ ({checkout.length})</span>{" "}
+            </p>
+          </Link>
         </div>
         <div className="shop__container__list">
           {products.map((item, i) => (
             <ShopItem
               key={i}
+              id={item._id}
               img={item.img}
-              description={item.price}
+              price={item.price}
               title={item.name}
-              subtitle={item.category}
+              category={item.category}
             />
           ))}
         </div>
@@ -65,6 +68,7 @@ const Shop = ({ fetchProducts, products }) => {
 const mapStateToProps = (state) => {
   return {
     products: state.productReducer.products,
+    checkout: state.checkoutReducer.checkout,
   };
 };
 

@@ -1,0 +1,77 @@
+@import "../../../Assets/Fonts/Fonts.scss";
+@import "../../../Assets/Colors/Colors.scss";
+
+.Checkout {
+  background-color: white;
+  
+  &__container {
+    min-height: 100vh;
+    width: 100%;
+
+    h2 {
+      text-align: center;
+      width: 100%;
+      font-family: $alfa;
+      color: $purple;
+      border-bottom: 3px solid $gold;
+      font-weight: 100;
+      font-size: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-gap: 1rem;
+      margin-top: 2rem;
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 17rem;
+        height: 14rem;
+        justify-self: center;
+
+        img {
+          object-fit: contain;
+          width: 10rem;
+          height: 10rem;
+        }
+
+        &__detail {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          font-family: $roboto;
+
+          h4 {
+            margin-top: 0.5rem;
+          }
+
+          button {
+            border: none;
+            width: 7rem;
+            height: 2rem;
+            border-radius: 50px;
+            background-color: $gold;
+            margin-top: 1rem;
+            font-family: $roboto;
+            transition: 0.8s ease-in-out all;
+            cursor: pointer;
+            outline: none;
+            font-size: 0.9rem;
+            &:hover {
+              transform: translateX(1rem);
+            }
+            &:nth-last-child(1) {
+              background-color: rgb(226, 46, 46);
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

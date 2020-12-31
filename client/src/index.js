@@ -10,6 +10,8 @@ import Nav from "./Components/Nav/Nav.jsx";
 import Home from "./Components/Pages/Home/Home";
 import Squad from "./Components/Pages/Squad/Squad";
 import Shop from "./Components/Pages/Shop/Shop";
+import Checkout from "./Components/Pages/Checkout/Checkout";
+import IconCheckout from "./Components/IconCheckout/IconCheckout";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,7 +23,10 @@ ReactDOM.render(
             <Route exact path="/" component={Home} />
             <Route path="/squad" component={Squad} />
             <Route path="/shop" component={Shop} />
+            <Route path="/checkout" component={Checkout} />
+            {/* <Route path="/product/:id" component={ProductDetail} /> */}
           </Switch>
+          <IconCheckout/>
         </Router>
       </PersistGate>
     </Provider>
