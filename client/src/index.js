@@ -12,6 +12,8 @@ import Squad from "./Components/Pages/Squad/Squad";
 import Shop from "./Components/Pages/Shop/Shop";
 import Checkout from "./Components/Pages/Checkout/Checkout";
 import IconCheckout from "./Components/IconCheckout/IconCheckout";
+import Aboutus from "./Components/Pages/Aboutus/Aboutus";
+import ProductDetail from "./Components/Pages/ProductDetail/ProductDetail";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,9 +26,10 @@ ReactDOM.render(
             <Route path="/squad" component={Squad} />
             <Route path="/shop" component={Shop} />
             <Route path="/checkout" component={Checkout} />
-            {/* <Route path="/product/:id" component={ProductDetail} /> */}
+            <Route path="/aboutus" component={Aboutus} />
+            <Route path="/product/:id" component={ProductDetail} />
           </Switch>
-          <IconCheckout/>
+          <IconCheckout />
         </Router>
       </PersistGate>
     </Provider>

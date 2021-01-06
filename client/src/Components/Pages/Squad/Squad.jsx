@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Squad.scss";
 import Footer from "../../Footer/Footer";
 import axios from "axios";
-import kobe from "../../../Assets/Images/gif/kobe-gif.gif";
 import CardPlayer from "./CardPlayer";
+import Modal from "../../Modal/Modal";
 
 const Squad = () => {
   const [squad, setSquad] = useState([]);
@@ -37,12 +37,8 @@ const Squad = () => {
           <Footer />
         </div>
       ) : (
-        <div className="modal">
-          <img src={kobe} alt="" />
-          <h3>
-            Please wait... <br /> for the <br /> Buzzer Beater! <br /> ⏰
-          </h3>
-        </div>
+
+        <Modal/>
       )}
     </>
   );

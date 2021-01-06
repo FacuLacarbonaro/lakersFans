@@ -20,20 +20,14 @@ const RightNav = ({ open, setOpen }) => {
       <Link onClick={autoClose} to="/" className="link">
         <li>Home</li>
       </Link>
-      <Link onClick={autoClose} to="/about" className="link">
-        <li>About us</li>
-      </Link>
       <Link onClick={autoClose} to="/squad" className="link">
         <li>Squad</li>
-      </Link>
-      <Link onClick={autoClose} to="/news" className="link">
-        <li>News</li>
       </Link>
       <Link onClick={autoClose} to="/shop" className="link">
         <li>Shop</li>
       </Link>
-      <Link onClick={autoClose} to="/contact" className="link">
-        <li>Contact</li>
+      <Link onClick={autoClose} to="/aboutus" className="link">
+        <li>About us</li>
       </Link>
     </Ul>
   );

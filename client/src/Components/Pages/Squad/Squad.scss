@@ -12,26 +12,6 @@ body {
   width: 100%;
 }
 
-.modal {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  img {
-  }
-  h3 {
-    margin-top: 20px;
-    font-size: 1.8rem;
-    font-family: $alfa;
-    font-weight: 100;
-    color: $purple;
-    text-shadow: -5px 4px 2px $gold;
-    text-align: center;
-  }
-}
 
 .squad {
   &__hero {

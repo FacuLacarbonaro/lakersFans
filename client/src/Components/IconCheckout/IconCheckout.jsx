@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-
+import { Link } from "react-router-dom";
 import "./IconCheckout.scss";
 
 const IconCheckout = ({ checkout }) => {
@@ -9,7 +9,9 @@ const IconCheckout = ({ checkout }) => {
   } else {
     return (
       <div className="iconCheckout">
-        <h2>{checkout.length}</h2>
+        <Link className="iconCheckout__link" to="/checkout">
+          <h2>{checkout.length}</h2>
+        </Link>
       </div>
     );
   }

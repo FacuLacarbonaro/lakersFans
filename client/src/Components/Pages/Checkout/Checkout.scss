@@ -1,11 +1,29 @@
 @import "../../../Assets/Fonts/Fonts.scss";
 @import "../../../Assets/Colors/Colors.scss";
 
+.vacio {
+  margin: 1rem;
+  text-align: center;
+  font-family: $roboto;
+  font-size: 1.4rem;
+
+  &__link {
+    text-decoration: none;
+    color: purple;
+    font-weight: 700;
+    transition: 0.3s ease-in-out all;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
 .Checkout {
   background-color: white;
-  
+
   &__container {
-    min-height: 100vh;
+    min-height: 40vh;
     width: 100%;
 
     h2 {
@@ -19,7 +37,6 @@
       padding-top: 1rem;
       padding-bottom: 0.5rem;
     }
-
     &__list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
