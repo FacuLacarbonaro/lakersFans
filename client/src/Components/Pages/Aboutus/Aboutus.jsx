@@ -1,6 +1,7 @@
 import React from "react";
 import "./Aboutus.scss";
 import Bye from "../../../Assets/Images/png/bye.png";
+import { Link } from "react-router-dom";
 
 import { FaGithub, FaLinkedin, FaInstagram, FaFolder } from "react-icons/fa";
 
@@ -32,10 +33,18 @@ const Aboutus = () => {
           </p>
         </div>
         <div className="aboutus__container__socialdev">
-          <FaGithub className="aboutus__container__socialdev__icon" />
-          <FaLinkedin className="aboutus__container__socialdev__icon" />
-          <FaInstagram className="aboutus__container__socialdev__icon" />
-          <FaFolder className="aboutus__container__socialdev__icon" />
+          <Link to="github.com">
+            <FaGithub className="aboutus__container__socialdev__icon" />
+          </Link>
+          <Link to="github.com">
+            <FaLinkedin className="aboutus__container__socialdev__icon" />
+          </Link>
+          <Link to="github.com">
+            <FaInstagram className="aboutus__container__socialdev__icon" />
+          </Link>
+          <Link to="github.com">
+            <FaFolder className="aboutus__container__socialdev__icon" />
+          </Link>
         </div>
       </div>
     </div>

@@ -28,15 +28,15 @@ const Subtotal = ({ checkout }) => {
   return (
     <div className="subtotal">
       <div className="subtotal__shipping">
-        <div className="sidebar__content__shipping__option">
+        <div className="subtotal__shipping__option">
           <input type="radio" name="option" onClick={freeShip} />
           Free Shipping ($0)
         </div>
-        <div className="sidebar__content__shipping__option">
+        <div className="subtotal__shipping__option">
           <input type="radio" name="option" onClick={standardShip} />
           Stardard ($100)
         </div>
-        <div className="sidebar__content__shipping__option">
+        <div className="subtotal__shipping__option">
           <input type="radio" name="option" onClick={expressShip} />
           Express ($300)
         </div>

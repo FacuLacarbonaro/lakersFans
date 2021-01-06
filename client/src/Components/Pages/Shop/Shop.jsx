@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
 import shopbanner from "../../../Assets/Images/jpg/banne.jpg";
@@ -7,13 +7,13 @@ import "./Shop.scss";
 import ShopItem from "../../ShopItem/ShopItem";
 import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
-import Modal from "../../Modal/Modal";
 
 const Shop = ({ fetchProducts, products, checkout }) => {
   useEffect(() => {
     fetchProducts();
 
     window.scrollTo(0, 0);
+    // eslint-disable-next-line
   }, []);
 
   return (
