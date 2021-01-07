@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Logo1 from "../../Assets/Images/png/celtics-logo.png";
 import Logo2 from "../../Assets/Images/png/los-angeles-lakers-logo/los-angeles-lakers-logo-transparent.png";
-import './NextMatch.scss';
+import "./NextMatch.scss";
 
 const ClubStyled = styled.div`
   background-size: cover;

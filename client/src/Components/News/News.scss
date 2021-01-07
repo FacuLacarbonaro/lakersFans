@@ -4,6 +4,11 @@
 .news {
   width: 100%;
   background-color: $gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 
   h3 {
     text-align: center;
@@ -16,11 +21,11 @@
 
   .carousel-root {
     padding: 2rem 1rem 0.5rem 1rem;
-
+    width: 80%;
+    max-width: 70rem;
     
   }
-  .carousel-slider{
+  .carousel-slider {
     z-index: 1;
   }
-  
 }
