@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import Fade from "react-reveal/Fade";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import NewsCard from "../News/NewsCard";
 import shop1 from "../../Assets/Images/jpg/shop1.jpg";
@@ -13,10 +14,12 @@ import "./ShopContainer.scss";
 const ShopContainer = () => {
   return (
     <div className="shopContainer">
-      <h3>
-        NEW IN
-        <br /> THE LATEST ARRIVALS
-      </h3>
+      <Fade left duration={1500} delay={300}>
+        <h3>
+          NEW IN
+          <br /> THE LATEST ARRIVALS
+        </h3>
+      </Fade>
       <Carousel
         transitionTime={800}
         interval={10000}

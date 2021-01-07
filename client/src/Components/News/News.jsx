@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./News.scss";
@@ -11,7 +12,9 @@ import News4 from "../../Assets/Images/jpg/news4.jpg";
 const News = () => {
   return (
     <div className="news">
-      <h3>News</h3>
+      <Fade top duration={1500} delay={300}>
+        <h3>News</h3>
+      </Fade>
       <Carousel
         transitionTime={800}
         interval={10000}

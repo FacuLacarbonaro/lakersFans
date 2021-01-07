@@ -37,8 +37,7 @@ const Squad = () => {
           <Footer />
         </div>
       ) : (
-
-        <Modal/>
+        <Modal />
       )}
     </>
   );

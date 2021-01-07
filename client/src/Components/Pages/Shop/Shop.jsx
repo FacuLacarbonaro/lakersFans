@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-
+import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
 import shopbanner from "../../../Assets/Images/jpg/banne.jpg";
 import tapiz from "../../../Assets/Images/jpg/tapiz-la.jpg";
 import "./Shop.scss";
@@ -41,7 +42,10 @@ const Shop = ({ fetchProducts, products, checkout }) => {
         }}
       >
         <div className="shop__container__title">
-          <h3>Products</h3>
+          <Zoom left cascade>
+            <h3>Products</h3>
+          </Zoom>
+
           <Link to="/checkout">
             <p>
               Go to Checkout <span>🗑️ ({checkout.length})</span>{" "}
@@ -50,14 +54,16 @@ const Shop = ({ fetchProducts, products, checkout }) => {
         </div>
         <div className="shop__container__list">
           {products.map((item, i) => (
-            <ShopItem
-              key={i}
-              id={item._id}
-              img={item.img}
-              price={item.price}
-              title={item.name}
-              category={item.category}
-            />
+            <Slide left>
+              <ShopItem
+                key={i}
+                id={item._id}
+                img={item.img}
+                price={item.price}
+                title={item.name}
+                category={item.category}
+              />
+            </Slide>
           ))}
         </div>
       </div>

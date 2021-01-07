@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import Footer from "../../Footer/Footer";
 import Hero from "../../Hero/Hero";
 import News from "../../News/News";
@@ -12,7 +13,7 @@ const Home = () => {
   return (
     <div className="home">
       <Hero />
-      <NextMatch />
+        <NextMatch />
       <News />
       <ShopContainer />
       <Footer />

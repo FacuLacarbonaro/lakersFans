@@ -11,6 +11,7 @@ const ShopItem = ({ img, price, title, category, id }) => {
   const dispatch = useDispatch();
 
   return (
+    
     <div className="shopItem">
       <div className="shopItem__img">
         <img src={img} alt="" />

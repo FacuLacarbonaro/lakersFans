@@ -28,9 +28,9 @@
     align-items: center;
     background-color: $purple;
     border: 8px solid white;
-
+    border-radius: 30px;
     @media (min-width: 1024px) and (max-width: 1920px) {
-      max-width: 70rem;
+      max-width: 40rem;
     }
 
     h3 {

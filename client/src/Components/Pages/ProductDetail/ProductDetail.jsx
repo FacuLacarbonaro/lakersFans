@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect, useDispatch } from "react-redux";
 import { CHECKOUT_PRODUCTS_ADD } from "../../../Redux/Actions/constants";
 import Footer from "../../Footer/Footer";
@@ -8,6 +8,10 @@ import "./ProductDetail.scss";
 const ProductDetail = ({ productSelected }) => {
   console.log(productSelected);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="productDetail">
