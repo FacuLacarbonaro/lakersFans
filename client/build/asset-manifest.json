@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.806dd10f.chunk.css",
+    "main.js": "/static/js/main.98b04ffc.chunk.js",
+    "main.js.map": "/static/js/main.98b04ffc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c012fedc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c012fedc.js.map",
+    "static/css/2.55d8add8.chunk.css": "/static/css/2.55d8add8.chunk.css",
+    "static/js/2.dd99e090.chunk.js": "/static/js/2.dd99e090.chunk.js",
+    "static/js/2.dd99e090.chunk.js.map": "/static/js/2.dd99e090.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.55d8add8.chunk.css.map": "/static/css/2.55d8add8.chunk.css.map",
+    "static/css/main.806dd10f.chunk.css.map": "/static/css/main.806dd10f.chunk.css.map",
+    "static/js/2.dd99e090.chunk.js.LICENSE.txt": "/static/js/2.dd99e090.chunk.js.LICENSE.txt",
+    "static/media/banne.e1ce571a.jpg": "/static/media/banne.e1ce571a.jpg",
+    "static/media/Button.scss": "/static/media/basketball-ball.cc5a323d.png",
+    "static/media/bye.f65c7f6d.png": "/static/media/bye.f65c7f6d.png",
+    "static/media/celtics-logo.6fae52f7.png": "/static/media/celtics-logo.6fae52f7.png",
+    "static/media/hero-lebron.27c54001.png": "/static/media/hero-lebron.27c54001.png",
+    "static/media/ShopContainer.scss": "/static/media/hero2.39adf695.jpg",
+    "static/media/kobe-gif.fd964106.gif": "/static/media/kobe-gif.fd964106.gif",
+    "static/media/Nav.scss": "/static/media/los-angeles-lakers-logo-font.8a58eaed.png",
+    "static/media/los-angeles-lakers-logo-transparent.8ff87653.png": "/static/media/los-angeles-lakers-logo-transparent.8ff87653.png",
+    "static/media/news1.9e77ba88.jpg": "/static/media/news1.9e77ba88.jpg",
+    "static/media/news2.7d2eba6c.jpg": "/static/media/news2.7d2eba6c.jpg",
+    "static/media/news3.5dc18ee4.jpg": "/static/media/news3.5dc18ee4.jpg",
+    "static/media/news4.00899ccf.jpg": "/static/media/news4.00899ccf.jpg",
+    "static/media/shop1.015cb331.jpg": "/static/media/shop1.015cb331.jpg",
+    "static/media/shop2.91101e6b.jpg": "/static/media/shop2.91101e6b.jpg",
+    "static/media/shop3.dcd0ad02.jpg": "/static/media/shop3.dcd0ad02.jpg",
+    "static/media/shop4.65454c92.jpg": "/static/media/shop4.65454c92.jpg",
+    "static/media/shop5.1b1ba952.jpg": "/static/media/shop5.1b1ba952.jpg",
+    "static/media/tapiz-la.c0e9b280.jpg": "/static/media/tapiz-la.c0e9b280.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c012fedc.js",
+    "static/css/2.55d8add8.chunk.css",
+    "static/js/2.dd99e090.chunk.js",
+    "static/css/main.806dd10f.chunk.css",
+    "static/js/main.98b04ffc.chunk.js"
+  ]
+}
