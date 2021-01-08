@@ -11,7 +11,7 @@ const Squad = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:1337/players")
+      .get("https://lakers-fans.herokuapp.com/players")
       .then((res) => setSquad(res.data));
     window.scrollTo(0, 0);
 
